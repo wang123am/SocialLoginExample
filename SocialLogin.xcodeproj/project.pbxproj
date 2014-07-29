@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E39A74CE198753EB002DE2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74CD198753EB002DE2FA /* Foundation.framework */; };
+		E39A74D0198753EB002DE2FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74CF198753EB002DE2FA /* CoreGraphics.framework */; };
+		E39A74D2198753EB002DE2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74D1198753EB002DE2FA /* UIKit.framework */; };
+		E39A74D8198753EB002DE2FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E39A74D6198753EB002DE2FA /* InfoPlist.strings */; };
+		E39A74DA198753EB002DE2FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A74D9198753EB002DE2FA /* main.m */; };
+		E39A74DE198753EB002DE2FA /* SLoginAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A74DD198753EB002DE2FA /* SLoginAppDelegate.m */; };
+		E39A74E0198753EB002DE2FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39A74DF198753EB002DE2FA /* Images.xcassets */; };
+		E39A74E7198753EB002DE2FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74E6198753EB002DE2FA /* XCTest.framework */; };
+		E39A74E8198753EB002DE2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74CD198753EB002DE2FA /* Foundation.framework */; };
+		E39A74E9198753EB002DE2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A74D1198753EB002DE2FA /* UIKit.framework */; };
+		E39A74F1198753EB002DE2FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E39A74EF198753EB002DE2FA /* InfoPlist.strings */; };
+		E39A74F3198753EB002DE2FA /* SocialLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A74F2198753EB002DE2FA /* SocialLoginTests.m */; };
+		E39A74FF19875442002DE2FA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A74FD19875442002DE2FA /* FirstViewController.m */; };
+		E39A750019875442002DE2FA /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39A74FE19875442002DE2FA /* FirstViewController.xib */; };
+		E39A750419875764002DE2FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A750219875764002DE2FA /* SecondViewController.m */; };
+		E39A750519875764002DE2FA /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E39A750319875764002DE2FA /* SecondViewController.xib */; };
+		E39A750E19876CFE002DE2FA /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A750B19876CFE002DE2FA /* libWeiboSDK.a */; };
+		E39A750F19876CFE002DE2FA /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E39A750C19876CFE002DE2FA /* WeiboSDK.bundle */; };
+		E39A751319876D58002DE2FA /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A751119876D58002DE2FA /* TencentOpenAPI.framework */; };
+		E39A751419876D58002DE2FA /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E39A751219876D58002DE2FA /* TencentOpenApi_IOS_Bundle.bundle */; };
+		E39A751719876DE8002DE2FA /* XXCNSocialLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E39A751619876DE8002DE2FA /* XXCNSocialLogin.m */; };
+		E39A7519198787AE002DE2FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A7518198787AE002DE2FA /* SystemConfiguration.framework */; };
+		E39A751B198787C0002DE2FA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A751A198787C0002DE2FA /* libz.dylib */; };
+		E39A751D198787D0002DE2FA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A751C198787D0002DE2FA /* libstdc++.dylib */; };
+		E39A751F198787E0002DE2FA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A751E198787E0002DE2FA /* libsqlite3.dylib */; };
+		E39A7521198787EE002DE2FA /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A7520198787EE002DE2FA /* libiconv.dylib */; };
+		E39A75241987883A002DE2FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A75231987883A002DE2FA /* Security.framework */; };
+		E39A752619878869002DE2FA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A752519878869002DE2FA /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E39A74EA198753EB002DE2FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E39A74C2198753EB002DE2FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E39A74C9198753EB002DE2FA;
+			remoteInfo = SocialLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E39A74CA198753EB002DE2FA /* SocialLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39A74CD198753EB002DE2FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E39A74CF198753EB002DE2FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E39A74D1198753EB002DE2FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E39A74D5198753EB002DE2FA /* SocialLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialLogin-Info.plist"; sourceTree = "<group>"; };
+		E39A74D7198753EB002DE2FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E39A74D9198753EB002DE2FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E39A74DB198753EB002DE2FA /* SocialLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialLogin-Prefix.pch"; sourceTree = "<group>"; };
+		E39A74DC198753EB002DE2FA /* SLoginAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLoginAppDelegate.h; sourceTree = "<group>"; };
+		E39A74DD198753EB002DE2FA /* SLoginAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLoginAppDelegate.m; sourceTree = "<group>"; };
+		E39A74DF198753EB002DE2FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E39A74E5198753EB002DE2FA /* SocialLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39A74E6198753EB002DE2FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E39A74EE198753EB002DE2FA /* SocialLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialLoginTests-Info.plist"; sourceTree = "<group>"; };
+		E39A74F0198753EB002DE2FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E39A74F2198753EB002DE2FA /* SocialLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialLoginTests.m; sourceTree = "<group>"; };
+		E39A74FC19875442002DE2FA /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E39A74FD19875442002DE2FA /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E39A74FE19875442002DE2FA /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		E39A750119875764002DE2FA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E39A750219875764002DE2FA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E39A750319875764002DE2FA /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		E39A750B19876CFE002DE2FA /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		E39A750C19876CFE002DE2FA /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		E39A750D19876CFE002DE2FA /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		E39A751119876D58002DE2FA /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		E39A751219876D58002DE2FA /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		E39A751519876DE8002DE2FA /* XXCNSocialLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCNSocialLogin.h; sourceTree = "<group>"; };
+		E39A751619876DE8002DE2FA /* XXCNSocialLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCNSocialLogin.m; sourceTree = "<group>"; };
+		E39A7518198787AE002DE2FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E39A751A198787C0002DE2FA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E39A751C198787D0002DE2FA /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		E39A751E198787E0002DE2FA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E39A7520198787EE002DE2FA /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		E39A75231987883A002DE2FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E39A752519878869002DE2FA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E39A74C7198753EB002DE2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A752619878869002DE2FA /* CoreTelephony.framework in Frameworks */,
+				E39A75241987883A002DE2FA /* Security.framework in Frameworks */,
+				E39A7521198787EE002DE2FA /* libiconv.dylib in Frameworks */,
+				E39A751F198787E0002DE2FA /* libsqlite3.dylib in Frameworks */,
+				E39A751D198787D0002DE2FA /* libstdc++.dylib in Frameworks */,
+				E39A751B198787C0002DE2FA /* libz.dylib in Frameworks */,
+				E39A7519198787AE002DE2FA /* SystemConfiguration.framework in Frameworks */,
+				E39A751319876D58002DE2FA /* TencentOpenAPI.framework in Frameworks */,
+				E39A74D0198753EB002DE2FA /* CoreGraphics.framework in Frameworks */,
+				E39A74D2198753EB002DE2FA /* UIKit.framework in Frameworks */,
+				E39A74CE198753EB002DE2FA /* Foundation.framework in Frameworks */,
+				E39A750E19876CFE002DE2FA /* libWeiboSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39A74E2198753EB002DE2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A74E7198753EB002DE2FA /* XCTest.framework in Frameworks */,
+				E39A74E9198753EB002DE2FA /* UIKit.framework in Frameworks */,
+				E39A74E8198753EB002DE2FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E39A74C1198753EB002DE2FA = {
+			isa = PBXGroup;
+			children = (
+				E39A750819876CFE002DE2FA /* SocialLoginSDK */,
+				E39A750619876C1E002DE2FA /* ViewControllers */,
+				E39A74D3198753EB002DE2FA /* SocialLogin */,
+				E39A74EC198753EB002DE2FA /* SocialLoginTests */,
+				E39A74CC198753EB002DE2FA /* Frameworks */,
+				E39A74CB198753EB002DE2FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E39A74CB198753EB002DE2FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E39A74CA198753EB002DE2FA /* SocialLogin.app */,
+				E39A74E5198753EB002DE2FA /* SocialLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E39A74CC198753EB002DE2FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39A752519878869002DE2FA /* CoreTelephony.framework */,
+				E39A75231987883A002DE2FA /* Security.framework */,
+				E39A7520198787EE002DE2FA /* libiconv.dylib */,
+				E39A751E198787E0002DE2FA /* libsqlite3.dylib */,
+				E39A751C198787D0002DE2FA /* libstdc++.dylib */,
+				E39A751A198787C0002DE2FA /* libz.dylib */,
+				E39A7518198787AE002DE2FA /* SystemConfiguration.framework */,
+				E39A74CD198753EB002DE2FA /* Foundation.framework */,
+				E39A74CF198753EB002DE2FA /* CoreGraphics.framework */,
+				E39A74D1198753EB002DE2FA /* UIKit.framework */,
+				E39A74E6198753EB002DE2FA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E39A74D3198753EB002DE2FA /* SocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				E39A74DC198753EB002DE2FA /* SLoginAppDelegate.h */,
+				E39A74DD198753EB002DE2FA /* SLoginAppDelegate.m */,
+				E39A74DF198753EB002DE2FA /* Images.xcassets */,
+				E39A74D4198753EB002DE2FA /* Supporting Files */,
+			);
+			path = SocialLogin;
+			sourceTree = "<group>";
+		};
+		E39A74D4198753EB002DE2FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E39A74D5198753EB002DE2FA /* SocialLogin-Info.plist */,
+				E39A74D6198753EB002DE2FA /* InfoPlist.strings */,
+				E39A74D9198753EB002DE2FA /* main.m */,
+				E39A74DB198753EB002DE2FA /* SocialLogin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E39A74EC198753EB002DE2FA /* SocialLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				E39A74F2198753EB002DE2FA /* SocialLoginTests.m */,
+				E39A74ED198753EB002DE2FA /* Supporting Files */,
+			);
+			path = SocialLoginTests;
+			sourceTree = "<group>";
+		};
+		E39A74ED198753EB002DE2FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E39A74EE198753EB002DE2FA /* SocialLoginTests-Info.plist */,
+				E39A74EF198753EB002DE2FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E39A750619876C1E002DE2FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E39A750119875764002DE2FA /* SecondViewController.h */,
+				E39A750219875764002DE2FA /* SecondViewController.m */,
+				E39A750319875764002DE2FA /* SecondViewController.xib */,
+				E39A74FC19875442002DE2FA /* FirstViewController.h */,
+				E39A74FD19875442002DE2FA /* FirstViewController.m */,
+				E39A74FE19875442002DE2FA /* FirstViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E39A750819876CFE002DE2FA /* SocialLoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E39A750919876CFE002DE2FA /* otherSDKS */,
+				E39A751519876DE8002DE2FA /* XXCNSocialLogin.h */,
+				E39A751619876DE8002DE2FA /* XXCNSocialLogin.m */,
+			);
+			path = SocialLoginSDK;
+			sourceTree = "<group>";
+		};
+		E39A750919876CFE002DE2FA /* otherSDKS */ = {
+			isa = PBXGroup;
+			children = (
+				E39A751019876D58002DE2FA /* TencentOpenAPI */,
+				E39A750A19876CFE002DE2FA /* libWeiboSDK */,
+			);
+			path = otherSDKS;
+			sourceTree = "<group>";
+		};
+		E39A750A19876CFE002DE2FA /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E39A750B19876CFE002DE2FA /* libWeiboSDK.a */,
+				E39A750C19876CFE002DE2FA /* WeiboSDK.bundle */,
+				E39A750D19876CFE002DE2FA /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		E39A751019876D58002DE2FA /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E39A751119876D58002DE2FA /* TencentOpenAPI.framework */,
+				E39A751219876D58002DE2FA /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E39A74C9198753EB002DE2FA /* SocialLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39A74F6198753EB002DE2FA /* Build configuration list for PBXNativeTarget "SocialLogin" */;
+			buildPhases = (
+				E39A74C6198753EB002DE2FA /* Sources */,
+				E39A74C7198753EB002DE2FA /* Frameworks */,
+				E39A74C8198753EB002DE2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialLogin;
+			productName = SocialLogin;
+			productReference = E39A74CA198753EB002DE2FA /* SocialLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E39A74E4198753EB002DE2FA /* SocialLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39A74F9198753EB002DE2FA /* Build configuration list for PBXNativeTarget "SocialLoginTests" */;
+			buildPhases = (
+				E39A74E1198753EB002DE2FA /* Sources */,
+				E39A74E2198753EB002DE2FA /* Frameworks */,
+				E39A74E3198753EB002DE2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39A74EB198753EB002DE2FA /* PBXTargetDependency */,
+			);
+			name = SocialLoginTests;
+			productName = SocialLoginTests;
+			productReference = E39A74E5198753EB002DE2FA /* SocialLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E39A74C2198753EB002DE2FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SLogin;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AiXiang;
+				TargetAttributes = {
+					E39A74E4198753EB002DE2FA = {
+						TestTargetID = E39A74C9198753EB002DE2FA;
+					};
+				};
+			};
+			buildConfigurationList = E39A74C5198753EB002DE2FA /* Build configuration list for PBXProject "SocialLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E39A74C1198753EB002DE2FA;
+			productRefGroup = E39A74CB198753EB002DE2FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E39A74C9198753EB002DE2FA /* SocialLogin */,
+				E39A74E4198753EB002DE2FA /* SocialLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E39A74C8198753EB002DE2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A751419876D58002DE2FA /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				E39A750519875764002DE2FA /* SecondViewController.xib in Resources */,
+				E39A74D8198753EB002DE2FA /* InfoPlist.strings in Resources */,
+				E39A750F19876CFE002DE2FA /* WeiboSDK.bundle in Resources */,
+				E39A750019875442002DE2FA /* FirstViewController.xib in Resources */,
+				E39A74E0198753EB002DE2FA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39A74E3198753EB002DE2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A74F1198753EB002DE2FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E39A74C6198753EB002DE2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A750419875764002DE2FA /* SecondViewController.m in Sources */,
+				E39A74DE198753EB002DE2FA /* SLoginAppDelegate.m in Sources */,
+				E39A751719876DE8002DE2FA /* XXCNSocialLogin.m in Sources */,
+				E39A74FF19875442002DE2FA /* FirstViewController.m in Sources */,
+				E39A74DA198753EB002DE2FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39A74E1198753EB002DE2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39A74F3198753EB002DE2FA /* SocialLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E39A74EB198753EB002DE2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E39A74C9198753EB002DE2FA /* SocialLogin */;
+			targetProxy = E39A74EA198753EB002DE2FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E39A74D6198753EB002DE2FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39A74D7198753EB002DE2FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E39A74EF198753EB002DE2FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39A74F0198753EB002DE2FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E39A74F4198753EB002DE2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E39A74F5198753EB002DE2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E39A74F7198753EB002DE2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yan Wang (B27NH7UE8X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialLoginSDK/otherSDKS/TencentOpenAPI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialLogin/SocialLogin-Prefix.pch";
+				INFOPLIST_FILE = "SocialLogin/SocialLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialLoginSDK/otherSDKS/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74617F59-714E-4536-94F5-519748758E11";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E39A74F8198753EB002DE2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yan Wang (B27NH7UE8X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialLoginSDK/otherSDKS/TencentOpenAPI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialLogin/SocialLogin-Prefix.pch";
+				INFOPLIST_FILE = "SocialLogin/SocialLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialLoginSDK/otherSDKS/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74617F59-714E-4536-94F5-519748758E11";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E39A74FA198753EB002DE2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialLogin.app/SocialLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialLogin/SocialLogin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SocialLoginTests/SocialLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E39A74FB198753EB002DE2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialLogin.app/SocialLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialLogin/SocialLogin-Prefix.pch";
+				INFOPLIST_FILE = "SocialLoginTests/SocialLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E39A74C5198753EB002DE2FA /* Build configuration list for PBXProject "SocialLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39A74F4198753EB002DE2FA /* Debug */,
+				E39A74F5198753EB002DE2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39A74F6198753EB002DE2FA /* Build configuration list for PBXNativeTarget "SocialLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39A74F7198753EB002DE2FA /* Debug */,
+				E39A74F8198753EB002DE2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E39A74F9198753EB002DE2FA /* Build configuration list for PBXNativeTarget "SocialLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39A74FA198753EB002DE2FA /* Debug */,
+				E39A74FB198753EB002DE2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E39A74C2198753EB002DE2FA /* Project object */;
+}
